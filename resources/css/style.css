@@ -5,7 +5,21 @@ body{
 }
 
 /*Heading*/
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
 
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center;; */
+}
 header h1 {
     font-weight: normal;
     font-size: 50px;
@@ -34,12 +48,31 @@ a{
 footer{
     font-size: 21px;
     color: gray ;
-    text-align: right;
+    /* text-align: right; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
  
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+.shrink{
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+}
+/* smart phones */
+#tablet {
+    display: none;
+}
+@media only screen and (min-width: 700px) and (max-width:900px) 
 {
-    /* body{
-        background-color: black;
-    } */
+    body {
+        background-color: rgb(1, 9, 6);
+    }
+    #tablet {
+        display: block;
+        font-style: italic;
+        color: lightblue;
+    }
 }
